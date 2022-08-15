@@ -11,9 +11,12 @@ function renderSelect(tipa) {
         let newOption = document.createElement("option")
         newOption.textContent = tipa[i].code
         newOption.value = tipa[i].code
+        newOption.classList.add(`i${i}`)
         fragment.appendChild(newOption)
     }
     select.appendChild(fragment)
+    let elPul1 = document.querySelector(".i23")
+    elPul1.selected = true
 }
 
 let elForm = document.querySelector("#form")
