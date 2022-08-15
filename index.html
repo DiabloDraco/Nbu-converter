@@ -9,22 +9,19 @@
 	<title></title>
 </head>
 <body>
-	<header class="header">
-		<div class="container">
+	<div class="container pt-5">
+	<form id="form" class="form wrapper">
+		<h2 class="text-info fw-bold">Sum to <span id="pul">...</span></h2>
+		<div class="d-flex">
+			<input id="input" class="form-control" type="text" placeholder="value">
+			<select id="select" class="form-select w-50">
+				<option selected>none</option>
+			</select>
 		</div>
-	</header>
-	
-	<main>
-		<section class="hero"> 
-			<div class="container">
-			</div>
-		</section>        
-	</main>
-	
-	<footer class="footer">
-		<div class="container">
-		</div>
-	</footer>	
+		<button class="btn btn-info">Convert</button>
+		<p class="text-center text-success h4 fw-bold">Result: <span id="result">0</span> <span id="title"></span></p>
+	</form>		  
+	</div>
 	<script src="./js/main.js"></script>
 	<script src="./js/bootstrap.js"></script>
 </body>
